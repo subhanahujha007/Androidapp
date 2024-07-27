@@ -1,6 +1,6 @@
 # Welcome to my android app 👋
 a look at the App
-# watch the vido
+# watch the video
 [![Watch the Video](assets/images/video-thumbnail.png)](https://youtube.com/shorts/AqhlgeTlqO0?feature=share)
 
 
@@ -9,9 +9,6 @@ a look at the App
 <img src="assets/images/WhatsApp%20Image%202024-07-27%20at%2019.50.01.jpeg" width="200" />
 <img src="assets/images/WhatsApp%20Image%202024-07-27%20at%2019.50.05.jpeg" width="200" />
 
-
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-https://youtube.com/shorts/AqhlgeTlqO0?feature=share
 ## Get started
 
 1. Install dependencies
