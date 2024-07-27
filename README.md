@@ -1,5 +1,12 @@
 # Welcome to my android app 👋
+a look at the App
+![App video](assets/images/WhatsApp%20Video%202024-07-27%20at%2019.50.00.mp4)
 
+
+
+![App Screenshot](assets/images/WhatsApp%20Image%202024-07-27%20at%2019.50.08.jpeg)
+![App Screenshot](assets/images/WhatsApp%20Image%202024-07-27%20at%2019.50.01.jpeg)
+![App Screenshot](assets/images/WhatsApp%20Image%202024-07-27%20at%2019.50.05.jpeg)
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
