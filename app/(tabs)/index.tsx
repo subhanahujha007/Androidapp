@@ -6,10 +6,12 @@ import HorizontalScrollComponent from '@/components/Horizontalscrool'; // Correc
 import Match from '@/components/Match'; // Correct import path
 import ProfileImage from '@/components/Profile';
 import Navbar from '../Navbar';
-
+import BottomNavbar from '@/components/Bottomnavbar';
+import { SafeAreaView } from 'react-native-safe-area-context';
 export default function HomeScreen() {
   return (
     <>
+    <SafeAreaView>
       <StatusBar barStyle="default" />
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <Navbar />
@@ -28,6 +30,8 @@ export default function HomeScreen() {
           <Match />
         </View>
       </ScrollView>
+      <BottomNavbar />
+      </SafeAreaView>
     </>
   );
 }
