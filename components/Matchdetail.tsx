@@ -1,24 +1,30 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import BottomModal from '../components/Model'; // Adjust path as necessary
 
 const MatchDetailComponent: React.FC = () => {
+  const [modalVisible, setModalVisible] = useState(false);
+
+  const openModal = () => setModalVisible(true);
+  const closeModal = () => setModalVisible(false);
+
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Kol to win the match against  Mum?</Text>
-      <Text style={styles.paragraph}>H2H in last 5 T20 Kol: 4 Mum 1 Draw:0</Text>
-
+      <Text style={styles.heading}>Kolkatta to win the match vs Mumbai?</Text>
+      <Text style={styles.paragraph}>H2H in the Last 5 T20 Kol:4 Mum 1 Draw:0</Text>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={[styles.button, styles.yesButton]}>
+        <TouchableOpacity style={[styles.button, styles.yesButton]} onPress={openModal}>
           <Icon name="rupee" size={16} color="#fff" />
           <Text style={styles.buttonText}>4.5</Text>
         </TouchableOpacity>
-
-        <TouchableOpacity style={[styles.button, styles.noButton]}>
+        <TouchableOpacity style={[styles.button, styles.noButton]} onPress={openModal}>
           <Icon name="rupee" size={16} color="#fff" />
           <Text style={styles.buttonText}>4.6</Text>
         </TouchableOpacity>
       </View>
+      <BottomModal visible={modalVisible} onClose={closeModal} />
     </View>
   );
 };
@@ -28,31 +34,34 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: '#f0f0f0',
     borderRadius: 8,
-    margin: 10,
+    marginBottom: 10,
     alignItems: 'center',
   },
   heading: {
-    fontSize: 17,
+    fontSize: 24,
     fontWeight: 'bold',
     color: '#333',
     marginBottom: 5,
   },
   paragraph: {
-    fontSize: 12,
+    fontSize: 16,
     color: '#666',
     marginBottom: 10,
   },
   buttonContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '100%',
+    alignItems: 'center',
   },
   button: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
     borderRadius: 8,
-    width: '48%', // To fit two buttons in a row with spacing
+    marginHorizontal: 5,
+    width:'40%',
+    display:'flex',
+    justifyContent:'center',
+    alignSelf:'center'
   },
   yesButton: {
     backgroundColor: 'green',
