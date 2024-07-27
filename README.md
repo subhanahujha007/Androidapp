@@ -1,7 +1,7 @@
 # Welcome to my android app 👋
 a look at the App
 # watch the video
-[![Watch the Video](assets/images/video-thumbnail.png)](https://youtube.com/shorts/AqhlgeTlqO0?feature=share)
+[![Watch the Video]](https://youtube.com/shorts/AqhlgeTlqO0?feature=share)
 
 
 # screenshots
